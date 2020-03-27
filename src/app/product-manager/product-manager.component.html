@@ -1,0 +1,29 @@
+<div class="manager">
+  <h1>Manager Product</h1>
+</div>
+<div id="abc">
+<button routerLink="/product/add"><img src="https://img.icons8.com/nolan/40/add.png"/></button>
+</div>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product-Name</th>
+      <th scope="col">Product-Price</th>
+      <th scope="col">Product-Desc</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products; index as i">
+      <th scope="row">{{i}}</th>
+      <td><a routerLink="/product/detail/{{product.id}}">{{product.name}}</a></td>
+      <td>{{product.price}}</td>
+      <td>{{product.desc}}</td>
+      <td width="200">
+        <button routerLink="/product/edit/{{product.id}}"><img src="https://img.icons8.com/nolan/15/edit--v1.png"/></button>
+        <button (click)="removeItem(product.id)"><img src="https://img.icons8.com/nolan/15/delete-sign.png"/></button>
+      </td>
+    </tr>
+  </tbody>
+</table>

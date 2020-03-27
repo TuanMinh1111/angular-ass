@@ -1,0 +1,26 @@
+/* Add application styles & imports to this file! */
+#abc{
+  float: right;
+  margin-right: 30px;
+}
+.form-group{
+  width: 800px;
+  margin: 0 auto;
+}
+#add{
+  text-align: center;
+}
+.tieude h2{
+  text-align: center;
+  color:brown;
+  font-size: 40px;
+}
+.manager h1{
+  color: deeppink;
+  text-align: left;
+  font-size: 40px;
+  margin-left: 30px;
+}
+.agile-info{
+  text-align: center;
+}

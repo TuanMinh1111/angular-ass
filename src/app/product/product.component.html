@@ -1,0 +1,31 @@
+<div class="content">
+	<div class="container">
+		<div class="content-top">
+			<!--//content-->
+			<div class="c-btm">
+				<div class="content-top1">
+
+
+					<div class="container">
+						<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s" *ngFor="let product of products">
+							<div class="col-md1 simpleCart_shelfItem">
+								<a href="single.html">
+									<img class="img-responsive" src="{{product.image}}" alt="" />
+						</a>
+									<h3><a href="single.html">{{product.name}}</a></h3>
+									<div class="price">
+										<h5 class="item_price">{{product.price}}$</h5>
+										<a class="item_add" routerLink="/product/detail/{{product.id}}">Chi tiet</a>
+										<div class="clearfix"> </div>
+									</div>
+							</div>
+						</div>
+
+            
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
